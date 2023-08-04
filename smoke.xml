@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Test Suite">
+
+    <listeners>
+        <listener class-name="project.utilities.ExtentReportsUtil"/>
+    </listeners>
+    <test name="Smoke Test">
+        <classes>
+            <class name="project.tests.US_001_TC_01_Customer_should_sign_up_as_a_user_on_the_website"/>
+            <class name="project.tests.US_002_TC_02_Registration_should_NOT_be_available_using_previously_registered_credentials"/>
+            <class name="project.tests.US_006_TC_06_User_should_be_able_to_shop_on_the_site"/>
+            <class name="project.tests.US_009_TC_09_User_should_be_able_to_register_to_the_website_as_Vendor"/>
+            <class name="project.tests.US_010_TC_10_Password_level_chart_should_be_visible"/>
+            <class name="project.tests.US_011_TC_11_User_should_be_able_to_sign_in_as_a_vendor"/>
+            <class name="project.tests.US_016_TC_16_User_should_be_able_to_add_Simple_Product_as_a_Vendor"/>
+        </classes>
+    </test>
+
+</suite>

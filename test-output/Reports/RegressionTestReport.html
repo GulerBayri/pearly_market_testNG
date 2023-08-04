@@ -1,0 +1,4207 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link href='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>Pearly Market Web Application Report</title>
+
+	<style type='text/css'>
+		/* json-tree */
+		.jstBracket,.jstComma,.jstValue{white-space:pre-wrap}.jstValue{font-size:10px;font-weight:400;font-family:"Lucida Console",Monaco,monospace}.jstProperty{color:#666;word-wrap:break-word}.jstBool{color:#2525CC}.jstNum{color:#D036D0}.jstNull{color:gray}.jstStr{color:#2DB669}.jstFold:after{content:' -';cursor:pointer}.jstExpand{white-space:normal}.jstExpand:after{content:' +';cursor:pointer}.jstFolded{white-space:normal!important}.jstHiddenBlock{display:none}
+	</style>
+	
+	<script type="text/javascript">
+		/*! json-tree - v0.2.2 - 2017-09-25, MIT LICENSE */
+		var JSONTree=function(){var n={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#x27;","/":"&#x2F;"},t=0,r=0;this.create=function(n,t){return r+=1,N(u(n,0,!1),{class:"jstValue"})};var e=function(t){return t.replace(/[&<>'"]/g,function(t){return n[t]})},s=function(){return r+"_"+t++},u=function(n,t,r){if(null===n)return f(r?t:0);switch(typeof n){case"boolean":return l(n,r?t:0);case"number":return i(n,r?t:0);case"string":return o(n,r?t:0);default:return n instanceof Array?a(n,t,r):c(n,t,r)}},c=function(n,t,r){var e=s(),u=Object.keys(n).map(function(r){return j(r,n[r],t+1,!0)}).join(m()),c=[g("{",r?t:0,e),N(u,{id:e}),p("}",t)].join("\n");return N(c,{})},a=function(n,t,r){var e=s(),c=n.map(function(n){return u(n,t+1,!0)}).join(m());return[g("[",r?t:0,e),N(c,{id:e}),p("]",t)].join("\n")},o=function(n,t){var r=e(JSON.stringify(n));return N(v(r,t),{class:"jstStr"})},i=function(n,t){return N(v(n,t),{class:"jstNum"})},l=function(n,t){return N(v(n,t),{class:"jstBool"})},f=function(n){return N(v("null",n),{class:"jstNull"})},j=function(n,t,r){var s=v(e(JSON.stringify(n))+": ",r),c=N(u(t,r,!1),{});return N(s+c,{class:"jstProperty"})},m=function(){return N(",\n",{class:"jstComma"})},N=function(n,t){return d("span",t,n)},d=function(n,t,r){return"<"+n+Object.keys(t).map(function(n){return" "+n+'="'+t[n]+'"'}).join("")+">"+r+"</"+n+">"},g=function(n,t,r){return N(v(n,t),{class:"jstBracket"})+N("",{class:"jstFold",onclick:"JSONTree.toggle('"+r+"')"})};this.toggle=function(n){var t=document.getElementById(n),r=t.parentNode,e=t.previousElementSibling;""===t.className?(t.className="jstHiddenBlock",r.className="jstFolded",e.className="jstExpand"):(t.className="",r.className="",e.className="jstFold")};var p=function(n,t){return N(v(n,t),{})},v=function(n,t){return Array(2*t+1).join(" ")+n};return this}();
+	</script>
+</head>
+	<body class='extent standard default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo black"><img src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png"></a>
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+		</ul>
+		<!-- report name -->
+		<span class='report-name'>Pearly Market Web Application Report</span>
+		<!-- report headline -->
+		<span class='report-headline'></span>
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<a href='#!'>
+			<span class='label blue darken-3 suite-start-time'>Jun 11, 2023 05:49:34 PM</span>
+			</a>
+		</ul>
+	</div>
+</nav>		<!-- container -->
+		<div class='container'>
+<div id='test-view' class='view'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+			<!-- category toggle -->
+			<!-- category toggle -->
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+				<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+				<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+<div id='test-view-charts' class='subview-full'>
+    <div id='charts-row' class='row nm-v nm-h'>
+        <div class='col s12 m12 l12 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Tests</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='parent-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='93.939%'><span class='strong'>31</span> test(s) passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='6.061%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="timeline-chart" class="row nm-v nm-h">
+        <div class="col s12 m12 l12 np-h">
+            <div class="card-panel">
+                <div class='left panel-name'>Timeline (seconds)</div>
+                <div class="chart-box" style="width:98%;max-height:145px;">
+                    <canvas id="timeline" height="120"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='test-collection' class='test-collection'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>Pearly Market Web Application</span>
+						<span class='test-time'>Jun 11, 2023 05:49:34 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 05:49:34 PM</span>
+	<span class='label end-time'>Jun 11, 2023 05:49:34 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
+</div>
+<div class='test-desc'>Pearly Market Web Application Report </div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>Regression Test</span>
+						<span class='test-time'>Jun 11, 2023 05:49:34 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 05:49:34 PM</span>
+	<span class='label end-time'>Jun 11, 2023 05:49:34 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:49:34 PM</td>
+				<td class='step-details'>
+						Regression Test
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_01_Customer_should_sign_up_as_a_user_on_the_website</span>
+						<span class='test-time'>Jun 11, 2023 05:49:35 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 05:49:35 PM</span>
+	<span class='label end-time'>Jun 11, 2023 05:49:46 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+112ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:49:35 PM</td>
+				<td class='step-details'>
+						TC_01_Customer_should_sign_up_as_a_user_on_the_website
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:49:43 PM</td>
+				<td class='step-details'>
+						1_Go to https://pearlymarket.com/
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:49:43 PM</td>
+				<td class='step-details'>
+						2_click on register link
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:49:45 PM</td>
+				<td class='step-details'>
+						3_enter sign up username
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:49:45 PM</td>
+				<td class='step-details'>
+						4_enter sign up user email
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:49:45 PM</td>
+				<td class='step-details'>
+						5_enter sign up password
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:49:45 PM</td>
+				<td class='step-details'>
+						6_click agree checkbox
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:49:45 PM</td>
+				<td class='step-details'>
+						7_click Sign up button
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:49:46 PM</td>
+				<td class='step-details'>
+						TC_01_Customer_should_sign_up_as_a_user_on_the_website
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:49:46 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+						<ul class='screenshots'>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611054946image.png' src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611054946image.png' data-src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611054946image.png'></li>
+						</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_02_Registration_should_NOT_be_available_using_previously_registered_credentials</span>
+						<span class='test-time'>Jun 11, 2023 05:49:48 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 05:49:48 PM</span>
+	<span class='label end-time'>Jun 11, 2023 05:49:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+389ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:49:48 PM</td>
+				<td class='step-details'>
+						TC_02_Registration_should_NOT_be_available_using_previously_registered_credentials
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:49:54 PM</td>
+				<td class='step-details'>
+						1_Go to https://pearlymarket.com/
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:49:55 PM</td>
+				<td class='step-details'>
+						2_clickRegisterLink
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:49:56 PM</td>
+				<td class='step-details'>
+						3_enterSignUpUserNameNegative
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:49:56 PM</td>
+				<td class='step-details'>
+						4_enterSignUpUserEmailNegative
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:49:56 PM</td>
+				<td class='step-details'>
+						5_enterSignUpPasswordNegative
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:49:56 PM</td>
+				<td class='step-details'>
+						6_clickAgreeCheckBox
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:49:56 PM</td>
+				<td class='step-details'>
+						7_clickSignUpButton
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:49:58 PM</td>
+				<td class='step-details'>
+						validatePreviouslyRegisteredCredentialsIsnotPossible
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:49:58 PM</td>
+				<td class='step-details'>
+						TC_02_Registration_should_NOT_be_available_using_previously_registered_credentials
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:49:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+						<ul class='screenshots'>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611054958image.png' src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611054958image.png' data-src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611054958image.png'></li>
+						</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_03_User_should_add_Billing_Address</span>
+						<span class='test-time'>Jun 11, 2023 05:50:00 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 05:50:00 PM</span>
+	<span class='label end-time'>Jun 11, 2023 05:50:32 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 31s+956ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:50:00 PM</td>
+				<td class='step-details'>
+						TC_03_User_should_add_Billing_Address
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:50:10 PM</td>
+				<td class='step-details'>
+						1_Go to https://pearlymarket.com/
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:50:20 PM</td>
+				<td class='step-details'>
+						2_clickMyAccount
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:50:22 PM</td>
+				<td class='step-details'>
+						3_clickAddresses
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:50:25 PM</td>
+				<td class='step-details'>
+						4_clickaddForBillingAddress
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:50:25 PM</td>
+				<td class='step-details'>
+						5_enterFirstNamePasswordBA
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:50:25 PM</td>
+				<td class='step-details'>
+						6_selectCountryRegionBA
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:50:25 PM</td>
+				<td class='step-details'>
+						7_enterStreetAddressBA
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:50:26 PM</td>
+				<td class='step-details'>
+						8_enterTownCityBA
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:50:26 PM</td>
+				<td class='step-details'>
+						9_selectStateDropDownBA
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:50:26 PM</td>
+				<td class='step-details'>
+						10_enterZipCodeBA
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:50:26 PM</td>
+				<td class='step-details'>
+						11_enterPhoneNumberBA
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:50:32 PM</td>
+				<td class='step-details'>
+						12_clickSaveAddressButtonBA
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:50:32 PM</td>
+				<td class='step-details'>
+						13_validateAddressAddedBA
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:50:32 PM</td>
+				<td class='step-details'>
+						TC_03_User_should_add_Billing_Address
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:50:32 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+						<ul class='screenshots'>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055032image.png' src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055032image.png' data-src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055032image.png'></li>
+						</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_04_User_should_add_Shipping_Address</span>
+						<span class='test-time'>Jun 11, 2023 05:50:35 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 05:50:35 PM</span>
+	<span class='label end-time'>Jun 11, 2023 05:51:05 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 30s+692ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:50:35 PM</td>
+				<td class='step-details'>
+						TC_04_User_should_add_Shipping_Address
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:50:43 PM</td>
+				<td class='step-details'>
+						1_Go to https://pearlymarket.com/
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:50:53 PM</td>
+				<td class='step-details'>
+						2_clickMyAccount
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:50:56 PM</td>
+				<td class='step-details'>
+						3_clickAddresses
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:50:58 PM</td>
+				<td class='step-details'>
+						4_clickaddForShippingAddress
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:50:58 PM</td>
+				<td class='step-details'>
+						5_enterFirstNamePasswordSH
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:50:58 PM</td>
+				<td class='step-details'>
+						6_selectCountryRegionSH
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:50:58 PM</td>
+				<td class='step-details'>
+						7_enterStreetAddressSH
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:50:58 PM</td>
+				<td class='step-details'>
+						8_enterTownCitySH
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:50:58 PM</td>
+				<td class='step-details'>
+						9_selectStateDropDownSH
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:50:59 PM</td>
+				<td class='step-details'>
+						10_enterZipCodeSH
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:51:05 PM</td>
+				<td class='step-details'>
+						11_clickSaveAddressButtonSH
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:51:05 PM</td>
+				<td class='step-details'>
+						//12_validateAddressAddedSH
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:51:05 PM</td>
+				<td class='step-details'>
+						TC_04_User_should_add_Shipping_Address
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:51:05 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+						<ul class='screenshots'>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055105image.png' src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055105image.png' data-src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055105image.png'></li>
+						</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_05_User_should_be_able_to_edit_Account_Details</span>
+						<span class='test-time'>Jun 11, 2023 05:51:07 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 05:51:07 PM</span>
+	<span class='label end-time'>Jun 11, 2023 05:51:41 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 33s+554ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:51:07 PM</td>
+				<td class='step-details'>
+						TC_05_User_should_be_able_to_edit_Account_Details
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:51:16 PM</td>
+				<td class='step-details'>
+						1_signInCustomer
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:51:26 PM</td>
+				<td class='step-details'>
+						2_clickMyAccount
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:51:29 PM</td>
+				<td class='step-details'>
+						3_clickAccountDetails
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:51:29 PM</td>
+				<td class='step-details'>
+						4_updateFirstNameLastName
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:51:30 PM</td>
+				<td class='step-details'>
+						5_updateDisplayName
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:51:30 PM</td>
+				<td class='step-details'>
+						6_updateEmailAddress
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:51:31 PM</td>
+				<td class='step-details'>
+						7_enterBiography
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:51:31 PM</td>
+				<td class='step-details'>
+						8_validateCurrentPasswordNewPasswordPasswordConfirmBoxesAreEnabled
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:51:34 PM</td>
+				<td class='step-details'>
+						9_updateCurrentPassWord
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:51:41 PM</td>
+				<td class='step-details'>
+						10_clickSaveChangesButton
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:51:41 PM</td>
+				<td class='step-details'>
+						//11_verifyAccountDetailsUpdated
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:51:41 PM</td>
+				<td class='step-details'>
+						TC_05_User_should_be_able_to_edit_Account_Details
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:51:41 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+						<ul class='screenshots'>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055141image.png' src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055141image.png' data-src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055141image.png'></li>
+						</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>signIn_as_customer</span>
+						<span class='test-time'>Jun 11, 2023 05:51:43 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 05:51:43 PM</span>
+	<span class='label end-time'>Jun 11, 2023 05:51:57 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+933ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:51:43 PM</td>
+				<td class='step-details'>
+						signIn_as_customer
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:51:54 PM</td>
+				<td class='step-details'>
+						1_signInCustomer
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:51:57 PM</td>
+				<td class='step-details'>
+						signIn_as_customer
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:51:57 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_06_User_should_be_able_to_shop_on_the_site1</span>
+						<span class='test-time'>Jun 11, 2023 05:51:57 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 05:51:57 PM</span>
+	<span class='label end-time'>Jun 11, 2023 05:52:07 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 9s+948ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:51:57 PM</td>
+				<td class='step-details'>
+						TC_06_User_should_be_able_to_shop_on_the_site1
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:51:59 PM</td>
+				<td class='step-details'>
+						searchItemKitchen Table
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:04 PM</td>
+				<td class='step-details'>
+						clickSearchButton
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:07 PM</td>
+				<td class='step-details'>
+						clickAddToCartButton
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:52:07 PM</td>
+				<td class='step-details'>
+						TC_06_User_should_be_able_to_shop_on_the_site1
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:07 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_06_User_should_be_able_to_shop_on_the_site1</span>
+						<span class='test-time'>Jun 11, 2023 05:52:07 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 05:52:07 PM</span>
+	<span class='label end-time'>Jun 11, 2023 05:52:14 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+664ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:52:07 PM</td>
+				<td class='step-details'>
+						TC_06_User_should_be_able_to_shop_on_the_site1
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:07 PM</td>
+				<td class='step-details'>
+						searchItemBlack Winter Skating
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:11 PM</td>
+				<td class='step-details'>
+						clickSearchButton
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:14 PM</td>
+				<td class='step-details'>
+						clickAddToCartButton
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:52:14 PM</td>
+				<td class='step-details'>
+						TC_06_User_should_be_able_to_shop_on_the_site1
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:14 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_06_User_should_be_able_to_shop_on_the_site1</span>
+						<span class='test-time'>Jun 11, 2023 05:52:14 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 05:52:14 PM</span>
+	<span class='label end-time'>Jun 11, 2023 05:52:20 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+617ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:52:14 PM</td>
+				<td class='step-details'>
+						TC_06_User_should_be_able_to_shop_on_the_site1
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:14 PM</td>
+				<td class='step-details'>
+						searchItemHD Television
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:18 PM</td>
+				<td class='step-details'>
+						clickSearchButton
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:20 PM</td>
+				<td class='step-details'>
+						clickAddToCartButton
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:52:20 PM</td>
+				<td class='step-details'>
+						TC_06_User_should_be_able_to_shop_on_the_site1
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:20 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_06_User_should_be_able_to_shop_on_the_site1</span>
+						<span class='test-time'>Jun 11, 2023 05:52:20 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 05:52:20 PM</span>
+	<span class='label end-time'>Jun 11, 2023 05:52:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+522ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:52:20 PM</td>
+				<td class='step-details'>
+						TC_06_User_should_be_able_to_shop_on_the_site1
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:20 PM</td>
+				<td class='step-details'>
+						searchItemMen’s Black Wrist Watch
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:24 PM</td>
+				<td class='step-details'>
+						clickSearchButton
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:27 PM</td>
+				<td class='step-details'>
+						clickAddToCartButton
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:52:27 PM</td>
+				<td class='step-details'>
+						TC_06_User_should_be_able_to_shop_on_the_site1
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:27 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_06_User_should_be_able_to_shop_on_the_site2</span>
+						<span class='test-time'>Jun 11, 2023 05:52:27 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 05:52:27 PM</span>
+	<span class='label end-time'>Jun 11, 2023 05:52:35 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+754ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:52:27 PM</td>
+				<td class='step-details'>
+						TC_06_User_should_be_able_to_shop_on_the_site2
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:27 PM</td>
+				<td class='step-details'>
+						clickGoToCartButton
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:31 PM</td>
+				<td class='step-details'>
+						clickViewCartButton
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:31 PM</td>
+				<td class='step-details'>
+						clickIncreaseButton
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:31 PM</td>
+				<td class='step-details'>
+						clickDecreaseButton
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:32 PM</td>
+				<td class='step-details'>
+						enterAmountOfItem
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:35 PM</td>
+				<td class='step-details'>
+						enterAmountOfItem
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:52:35 PM</td>
+				<td class='step-details'>
+						TC_06_User_should_be_able_to_shop_on_the_site2
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:35 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_06_User_should_be_able_to_shop_on_the_site3</span>
+						<span class='test-time'>Jun 11, 2023 05:52:35 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 05:52:35 PM</span>
+	<span class='label end-time'>Jun 11, 2023 05:52:43 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+505ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:52:35 PM</td>
+				<td class='step-details'>
+						TC_06_User_should_be_able_to_shop_on_the_site3
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:35 PM</td>
+				<td class='step-details'>
+						setAddBillingFirstName
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:35 PM</td>
+				<td class='step-details'>
+						setAddBillingLastName
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:35 PM</td>
+				<td class='step-details'>
+						selectCountry
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:35 PM</td>
+				<td class='step-details'>
+						setAddBillingPostCode
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:35 PM</td>
+				<td class='step-details'>
+						selectState
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:35 PM</td>
+				<td class='step-details'>
+						setAddBillingCity
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:35 PM</td>
+				<td class='step-details'>
+						setAddBillingAddress
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:35 PM</td>
+				<td class='step-details'>
+						setAddBillingPhone
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:36 PM</td>
+				<td class='step-details'>
+						setAddBillingEmail
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:36 PM</td>
+				<td class='step-details'>
+						verifyPaymentOptionsClickable
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:36 PM</td>
+				<td class='step-details'>
+						clickPlaceOrderButton
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:43 PM</td>
+				<td class='step-details'>
+						thankYouMessageIsVisible
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:52:43 PM</td>
+				<td class='step-details'>
+						TC_06_User_should_be_able_to_shop_on_the_site3
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:43 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+						<ul class='screenshots'>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055243image.png' src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055243image.png' data-src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055243image.png'></li>
+						</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>signIn_as_customer</span>
+						<span class='test-time'>Jun 11, 2023 05:52:43 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 05:52:43 PM</span>
+	<span class='label end-time'>Jun 11, 2023 05:52:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+265ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:52:43 PM</td>
+				<td class='step-details'>
+						signIn_as_customer
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:54 PM</td>
+				<td class='step-details'>
+						1_signInCustomer
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:52:58 PM</td>
+				<td class='step-details'>
+						signIn_as_customer
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:58 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_07_User_should_be_able_to_compare_selected_items_Compare</span>
+						<span class='test-time'>Jun 11, 2023 05:52:58 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 05:52:58 PM</span>
+	<span class='label end-time'>Jun 11, 2023 05:53:04 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+783ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:52:58 PM</td>
+				<td class='step-details'>
+						TC_07_User_should_be_able_to_compare_selected_items_Compare
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:00 PM</td>
+				<td class='step-details'>
+						searchItemKitchen Table
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:04 PM</td>
+				<td class='step-details'>
+						clickSearchButton
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:04 PM</td>
+				<td class='step-details'>
+						clickOnCompare
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:53:04 PM</td>
+				<td class='step-details'>
+						TC_07_User_should_be_able_to_compare_selected_items_Compare
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:04 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='17'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_07_User_should_be_able_to_compare_selected_items_Compare</span>
+						<span class='test-time'>Jun 11, 2023 05:53:04 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 05:53:04 PM</span>
+	<span class='label end-time'>Jun 11, 2023 05:53:08 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+41ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:53:04 PM</td>
+				<td class='step-details'>
+						TC_07_User_should_be_able_to_compare_selected_items_Compare
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:04 PM</td>
+				<td class='step-details'>
+						searchItemBlack Winter Skating
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:08 PM</td>
+				<td class='step-details'>
+						clickSearchButton
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:08 PM</td>
+				<td class='step-details'>
+						clickOnCompare
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:53:08 PM</td>
+				<td class='step-details'>
+						TC_07_User_should_be_able_to_compare_selected_items_Compare
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:08 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_07_User_should_be_able_to_compare_selected_items_Compare</span>
+						<span class='test-time'>Jun 11, 2023 05:53:08 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 05:53:08 PM</span>
+	<span class='label end-time'>Jun 11, 2023 05:53:12 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+118ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:53:08 PM</td>
+				<td class='step-details'>
+						TC_07_User_should_be_able_to_compare_selected_items_Compare
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:08 PM</td>
+				<td class='step-details'>
+						searchItemHD Television
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:12 PM</td>
+				<td class='step-details'>
+						clickSearchButton
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:12 PM</td>
+				<td class='step-details'>
+						clickOnCompare
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:53:12 PM</td>
+				<td class='step-details'>
+						TC_07_User_should_be_able_to_compare_selected_items_Compare
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:12 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='19'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_07_User_should_be_able_to_compare_selected_items_Compare</span>
+						<span class='test-time'>Jun 11, 2023 05:53:12 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 05:53:12 PM</span>
+	<span class='label end-time'>Jun 11, 2023 05:53:18 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+200ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:53:12 PM</td>
+				<td class='step-details'>
+						TC_07_User_should_be_able_to_compare_selected_items_Compare
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:13 PM</td>
+				<td class='step-details'>
+						searchItemMen’s Black Wrist Watch
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:18 PM</td>
+				<td class='step-details'>
+						clickSearchButton
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:18 PM</td>
+				<td class='step-details'>
+						clickOnCompare
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:53:18 PM</td>
+				<td class='step-details'>
+						TC_07_User_should_be_able_to_compare_selected_items_Compare
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:18 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='20'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_07_User_should_be_able_to_compare_selected_items_Compare2</span>
+						<span class='test-time'>Jun 11, 2023 05:53:18 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 05:53:18 PM</span>
+	<span class='label end-time'>Jun 11, 2023 05:54:02 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 44s+757ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:53:18 PM</td>
+				<td class='step-details'>
+						TC_07_User_should_be_able_to_compare_selected_items_Compare2
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:19 PM</td>
+				<td class='step-details'>
+						removeOneProductFromCompare
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:21 PM</td>
+				<td class='step-details'>
+						clickstartCompareButton
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:21 PM</td>
+				<td class='step-details'>
+						searchItem : Blue Ski Boots
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:25 PM</td>
+				<td class='step-details'>
+						clickSearchButton
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:25 PM</td>
+				<td class='step-details'>
+						clickOnCompare
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:29 PM</td>
+				<td class='step-details'>
+						clickstartCompareButton
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:29 PM</td>
+				<td class='step-details'>
+						validateThereAreCompareProducts
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:29 PM</td>
+				<td class='step-details'>
+						validateProductsVisible
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:29 PM</td>
+				<td class='step-details'>
+						validateProductsInStockCompareVisible
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:29 PM</td>
+				<td class='step-details'>
+						validateProductsDescriptionCompareVisible
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:29 PM</td>
+				<td class='step-details'>
+						validateProductsRatingsReviewsCompareVisible
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:29 PM</td>
+				<td class='step-details'>
+						validateProductsSkuCompareVisible
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:44 PM</td>
+				<td class='step-details'>
+						validateProductsColorCompareVisible
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:53:59 PM</td>
+				<td class='step-details'>
+						validateProductsSizeCompareVisible
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:54:02 PM</td>
+				<td class='step-details'>
+						removeOneByOneProductsFromCompare
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:54:02 PM</td>
+				<td class='step-details'>
+						TC_07_User_should_be_able_to_compare_selected_items_Compare2
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:54:02 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+						<ul class='screenshots'>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055402image.png' src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055402image.png' data-src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055402image.png'></li>
+						</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='21'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_08_User_should_be_able_to_add_selected_items_to_Wishlist</span>
+						<span class='test-time'>Jun 11, 2023 05:54:03 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 05:54:03 PM</span>
+	<span class='label end-time'>Jun 11, 2023 05:54:41 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 37s+927ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:54:03 PM</td>
+				<td class='step-details'>
+						TC_08_User_should_be_able_to_add_selected_items_to_Wishlist
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:54:13 PM</td>
+				<td class='step-details'>
+						1_signInCustomer
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:54:21 PM</td>
+				<td class='step-details'>
+						2_clickOnWishListIconTopRight
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:54:24 PM</td>
+				<td class='step-details'>
+						3_clickOnGoShopButton
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:54:24 PM</td>
+				<td class='step-details'>
+						4_hoverOverProduct
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:54:25 PM</td>
+				<td class='step-details'>
+						5_clickOnWishListIconProduct
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:54:27 PM</td>
+				<td class='step-details'>
+						6_clickOnWishListIconTopRight
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:54:27 PM</td>
+				<td class='step-details'>
+						7_validateWishListIsNotEmpty
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:54:27 PM</td>
+				<td class='step-details'>
+						8_validateQuickViewButtonIsEnabled
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:54:30 PM</td>
+				<td class='step-details'>
+						9_clickOnAddToCartButton
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:54:30 PM</td>
+				<td class='step-details'>
+						10_clickGoToCartButton
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:54:33 PM</td>
+				<td class='step-details'>
+						11_clickOnCheckOutButton
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:54:33 PM</td>
+				<td class='step-details'>
+						12_clickPlaceOrderButton
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:54:40 PM</td>
+				<td class='step-details'>
+						13_validate thank You Message IsVisible
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:54:41 PM</td>
+				<td class='step-details'>
+						TC_08_User_should_be_able_to_add_selected_items_to_Wishlist
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:54:41 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+						<ul class='screenshots'>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055441image.png' src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055441image.png' data-src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055441image.png'></li>
+						</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='22'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_09_User_should_be_able_to_register_to_the_website_as_Vendor</span>
+						<span class='test-time'>Jun 11, 2023 05:54:43 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 05:54:43 PM</span>
+	<span class='label end-time'>Jun 11, 2023 05:55:49 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 6s+534ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:54:43 PM</td>
+				<td class='step-details'>
+						TC_09_User_should_be_able_to_register_to_the_website_as_Vendor
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:54:50 PM</td>
+				<td class='step-details'>
+						1_go to the url
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:54:51 PM</td>
+				<td class='step-details'>
+						2_Click on sign in link
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:55:37 PM</td>
+				<td class='step-details'>
+						3_enter credentials
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:55:49 PM</td>
+				<td class='step-details'>
+						4_validate registration as a vendor is successful
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:55:49 PM</td>
+				<td class='step-details'>
+						5_validate after registration pearly market image for home page is visible
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:55:49 PM</td>
+				<td class='step-details'>
+						TC_09_User_should_be_able_to_register_to_the_website_as_Vendor
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:55:49 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+						<ul class='screenshots'>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055549image.png' src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055549image.png' data-src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055549image.png'></li>
+						</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='23'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_10_Password_level_chart_should_be_visible</span>
+						<span class='test-time'>Jun 11, 2023 05:55:51 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 05:55:51 PM</span>
+	<span class='label end-time'>Jun 11, 2023 05:56:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 19s+45ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:55:51 PM</td>
+				<td class='step-details'>
+						TC_10_Password_level_chart_should_be_visible
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:55:58 PM</td>
+				<td class='step-details'>
+						1_Click on sign in link
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:55:58 PM</td>
+				<td class='step-details'>
+						2_Click on register link
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:56:02 PM</td>
+				<td class='step-details'>
+						3_Click on bebome vendor link
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:56:02 PM</td>
+				<td class='step-details'>
+						4_enterPasswordLevelChartTooShort
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:56:04 PM</td>
+				<td class='step-details'>
+						5_enterPasswordLevelChartWeak
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:56:06 PM</td>
+				<td class='step-details'>
+						6_enterPasswordLevelChartGood
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:56:08 PM</td>
+				<td class='step-details'>
+						7_enterPasswordLevelChartStrong
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:56:10 PM</td>
+				<td class='step-details'>
+						TC_10_Password_level_chart_should_be_visible
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:56:10 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+						<ul class='screenshots'>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055610image.png' src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055610image.png' data-src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055610image.png'></li>
+						</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='24'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_11_User_should_be_able_to_sign_in_as_a_vendor</span>
+						<span class='test-time'>Jun 11, 2023 05:56:13 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 05:56:13 PM</span>
+	<span class='label end-time'>Jun 11, 2023 05:56:32 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 19s+313ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:56:13 PM</td>
+				<td class='step-details'>
+						TC_11_User_should_be_able_to_sign_in_as_a_vendor
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:56:20 PM</td>
+				<td class='step-details'>
+						1_Go to https://pearlymarket.com/
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:56:20 PM</td>
+				<td class='step-details'>
+						2_Click on sign in link
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:56:22 PM</td>
+				<td class='step-details'>
+						3_enter username of vendor
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:56:22 PM</td>
+				<td class='step-details'>
+						4_enter sign in password of vendor
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:56:22 PM</td>
+				<td class='step-details'>
+						5_Click on sign button
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:56:32 PM</td>
+				<td class='step-details'>
+						TC_11_User_should_be_able_to_sign_in_as_a_vendor
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:56:32 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+						<ul class='screenshots'>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055632image.png' src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055632image.png' data-src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055632image.png'></li>
+						</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='25'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_12_Vendor_should_add_Billing_Address</span>
+						<span class='test-time'>Jun 11, 2023 05:56:34 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 05:56:34 PM</span>
+	<span class='label end-time'>Jun 11, 2023 05:57:05 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 31s+356ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:56:34 PM</td>
+				<td class='step-details'>
+						TC_12_Vendor_should_add_Billing_Address
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:56:45 PM</td>
+				<td class='step-details'>
+						1_Go to https://pearlymarket.com/
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:56:53 PM</td>
+				<td class='step-details'>
+						click on my account
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:56:55 PM</td>
+				<td class='step-details'>
+						click on addresses
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:56:58 PM</td>
+				<td class='step-details'>
+						/click on add (billing address)
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:56:58 PM</td>
+				<td class='step-details'>
+						enter first name and password
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:56:58 PM</td>
+				<td class='step-details'>
+						select country region
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:56:58 PM</td>
+				<td class='step-details'>
+						enter street address
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:56:58 PM</td>
+				<td class='step-details'>
+						enter town city
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:56:58 PM</td>
+				<td class='step-details'>
+						enter state drop down
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:56:58 PM</td>
+				<td class='step-details'>
+						enter zip code
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:56:58 PM</td>
+				<td class='step-details'>
+						enter phone number
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:57:05 PM</td>
+				<td class='step-details'>
+						TC_12_Vendor_should_add_Billing_Address
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:57:05 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+						<ul class='screenshots'>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055705image.png' src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055705image.png' data-src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055705image.png'></li>
+						</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='26'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_13_Vendor_should_add_Shipping_Address</span>
+						<span class='test-time'>Jun 11, 2023 05:57:08 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 05:57:08 PM</span>
+	<span class='label end-time'>Jun 11, 2023 05:57:38 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 30s+241ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:57:08 PM</td>
+				<td class='step-details'>
+						TC_13_Vendor_should_add_Shipping_Address
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:57:19 PM</td>
+				<td class='step-details'>
+						1_Go to https://pearlymarket.com/
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:57:26 PM</td>
+				<td class='step-details'>
+						click on my account
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:57:29 PM</td>
+				<td class='step-details'>
+						click on addresses
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:57:31 PM</td>
+				<td class='step-details'>
+						click on add for shipping address
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:57:31 PM</td>
+				<td class='step-details'>
+						enter first name
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:57:31 PM</td>
+				<td class='step-details'>
+						select country region
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:57:31 PM</td>
+				<td class='step-details'>
+						enter street address
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:57:31 PM</td>
+				<td class='step-details'>
+						enter town city
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:57:31 PM</td>
+				<td class='step-details'>
+						select state drop down
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:57:32 PM</td>
+				<td class='step-details'>
+						enter zip code
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:57:38 PM</td>
+				<td class='step-details'>
+						click save address button
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:57:38 PM</td>
+				<td class='step-details'>
+						validate address added/
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:57:38 PM</td>
+				<td class='step-details'>
+						TC_13_Vendor_should_add_Shipping_Address
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:57:38 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+						<ul class='screenshots'>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055738image.png' src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055738image.png' data-src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055738image.png'></li>
+						</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='27'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_14_User_should_be_able_to_see_the_options_to_add_items_as_a_Vendor</span>
+						<span class='test-time'>Jun 11, 2023 05:57:40 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 05:57:40 PM</span>
+	<span class='label end-time'>Jun 11, 2023 05:58:47 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 7s+78ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:57:40 PM</td>
+				<td class='step-details'>
+						TC_14_User_should_be_able_to_see_the_options_to_add_items_as_a_Vendor
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:57:53 PM</td>
+				<td class='step-details'>
+						1_Vendor should sign in as Vendor.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:58:15 PM</td>
+				<td class='step-details'>
+						2_ The user is on (My Account > Store Manager > Product > Add New) page.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:58:16 PM</td>
+				<td class='step-details'>
+						3_There should be Simple Product, Variable Product, Grouped Product, and External - Affiliate Product options.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:58:16 PM</td>
+				<td class='step-details'>
+						4_Vendor should be able to add a product Photo.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:58:16 PM</td>
+				<td class='step-details'>
+						5_Vendor should be able to write a Product Title, Short Description and Description.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:58:31 PM</td>
+				<td class='step-details'>
+						6_Categories should be selectable.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:58:47 PM</td>
+				<td class='step-details'>
+						7_Vendor should be able to add New Categories.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:58:47 PM</td>
+				<td class='step-details'>
+						8_Product brands should be selectable.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:58:47 PM</td>
+				<td class='step-details'>
+						9_Vendor should be able to add New Product brands.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:58:47 PM</td>
+				<td class='step-details'>
+						TC_14_User_should_be_able_to_see_the_options_to_add_items_as_a_Vendor
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:58:47 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+						<ul class='screenshots'>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055847image.png' src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055847image.png' data-src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055847image.png'></li>
+						</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='28'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_15_User_should_be_able_to_see_the_options_to_add_items_as_a_Vendor</span>
+						<span class='test-time'>Jun 11, 2023 05:58:49 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 05:58:49 PM</span>
+	<span class='label end-time'>Jun 11, 2023 05:59:23 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 34s+75ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:58:49 PM</td>
+				<td class='step-details'>
+						TC_15_User_should_be_able_to_see_the_options_to_add_items_as_a_Vendor
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:58:50 PM</td>
+				<td class='step-details'>
+						sign in as Vendor
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:59:01 PM</td>
+				<td class='step-details'>
+						go on My Account
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:59:08 PM</td>
+				<td class='step-details'>
+						click on Store Manager
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:59:12 PM</td>
+				<td class='step-details'>
+						click on Product
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:59:16 PM</td>
+				<td class='step-details'>
+						click on Add New Button
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:59:21 PM</td>
+				<td class='step-details'>
+						click on Inventory
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:59:21 PM</td>
+				<td class='step-details'>
+						Enter SKU
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:59:22 PM</td>
+				<td class='step-details'>
+						enter StockQty
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:59:22 PM</td>
+				<td class='step-details'>
+						click Shipping
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:59:22 PM</td>
+				<td class='step-details'>
+						enter Weight
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:59:22 PM</td>
+				<td class='step-details'>
+						enter Lenght
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:59:22 PM</td>
+				<td class='step-details'>
+						enter Widht
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:59:22 PM</td>
+				<td class='step-details'>
+						enter Height
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:59:22 PM</td>
+				<td class='step-details'>
+						select Shiping class
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:59:22 PM</td>
+				<td class='step-details'>
+						select Processing time
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:59:23 PM</td>
+				<td class='step-details'>
+						click Attributes
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:59:23 PM</td>
+				<td class='step-details'>
+						select Attributes color
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:59:23 PM</td>
+				<td class='step-details'>
+						click Attributes Size
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:59:23 PM</td>
+				<td class='step-details'>
+						TC_15_User_should_be_able_to_see_the_options_to_add_items_as_a_Vendor
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:59:23 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+						<ul class='screenshots'>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055923image.png' src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055923image.png' data-src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611055923image.png'></li>
+						</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='29'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_16_User_should_be_able_to_add_Simple_Product_as_a_Vendor</span>
+						<span class='test-time'>Jun 11, 2023 05:59:26 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 05:59:26 PM</span>
+	<span class='label end-time'>Jun 11, 2023 06:00:20 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 54s+970ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:59:26 PM</td>
+				<td class='step-details'>
+						TC_16_User_should_be_able_to_add_Simple_Product_as_a_Vendor
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:59:26 PM</td>
+				<td class='step-details'>
+						sign in like Vendor
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:59:37 PM</td>
+				<td class='step-details'>
+						clikc My Account ->Store Manager->Product->Add Product
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:59:55 PM</td>
+				<td class='step-details'>
+						Simple Product should be default
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:59:55 PM</td>
+				<td class='step-details'>
+						selectable Virtual and Downloable
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:59:55 PM</td>
+				<td class='step-details'>
+						enter Price
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:59:56 PM</td>
+				<td class='step-details'>
+						enter Sale Price
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:59:56 PM</td>
+				<td class='step-details'>
+						enter Product Title
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:59:56 PM</td>
+				<td class='step-details'>
+						select categories
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:00:11 PM</td>
+				<td class='step-details'>
+						click Draft
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:00:20 PM</td>
+				<td class='step-details'>
+						TC_16_User_should_be_able_to_add_Simple_Product_as_a_Vendor
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:00:20 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+						<ul class='screenshots'>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611060020image.png' src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611060020image.png' data-src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611060020image.png'></li>
+						</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='30'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_17_User_should_be_able_to_shop_as_a_Vendor</span>
+						<span class='test-time'>Jun 11, 2023 06:00:23 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 06:00:23 PM</span>
+	<span class='label end-time'>Jun 11, 2023 06:01:23 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 0s+417ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:00:23 PM</td>
+				<td class='step-details'>
+						TC_17_User_should_be_able_to_shop_as_a_Vendor
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:00:24 PM</td>
+				<td class='step-details'>
+						go to https://pearlymarket.com/
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:00:30 PM</td>
+				<td class='step-details'>
+						click on sign in
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:00:39 PM</td>
+				<td class='step-details'>
+						click on My Account
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:00:47 PM</td>
+				<td class='step-details'>
+						click on Orders
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:00:49 PM</td>
+				<td class='step-details'>
+						click on Browse Product
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:00:52 PM</td>
+				<td class='step-details'>
+						click on Product
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:00:55 PM</td>
+				<td class='step-details'>
+						click on Add to Cart
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:00:58 PM</td>
+				<td class='step-details'>
+						clik on Cart
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:00:59 PM</td>
+				<td class='step-details'>
+						click on VIEW CART
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:01:02 PM</td>
+				<td class='step-details'>
+						click on PROCEED TO CHECKOUT
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:01:05 PM</td>
+				<td class='step-details'>
+						enter first name and lastname
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:01:05 PM</td>
+				<td class='step-details'>
+						enter country/region
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:01:06 PM</td>
+				<td class='step-details'>
+						enter street address
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:01:06 PM</td>
+				<td class='step-details'>
+						enter town/city
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:01:06 PM</td>
+				<td class='step-details'>
+						enter state
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:01:06 PM</td>
+				<td class='step-details'>
+						enter zip code
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:01:06 PM</td>
+				<td class='step-details'>
+						enter phone number
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:01:06 PM</td>
+				<td class='step-details'>
+						enter email address
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:01:06 PM</td>
+				<td class='step-details'>
+						click Payment Options
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:01:09 PM</td>
+				<td class='step-details'>
+						click on PLACE ORDER
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:01:18 PM</td>
+				<td class='step-details'>
+						click on My Account(Sign Out)
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:01:20 PM</td>
+				<td class='step-details'>
+						click on Orders
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:01:23 PM</td>
+				<td class='step-details'>
+						TC_17_User_should_be_able_to_shop_as_a_Vendor
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:01:23 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+						<ul class='screenshots'>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611060123image.png' src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611060123image.png' data-src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611060123image.png'></li>
+						</ul>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='31'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_18_User_should_be_able_to_create_Coupons_as_a_Vendor</span>
+						<span class='test-time'>Jun 11, 2023 06:01:25 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 06:01:25 PM</span>
+	<span class='label end-time'>Jun 11, 2023 06:02:04 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 38s+634ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:01:25 PM</td>
+				<td class='step-details'>
+						TC_18_User_should_be_able_to_create_Coupons_as_a_Vendor
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:01:36 PM</td>
+				<td class='step-details'>
+						1_Go to https://pearlymarket.com/
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:01:43 PM</td>
+				<td class='step-details'>
+						click on my account
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:01:46 PM</td>
+				<td class='step-details'>
+						click on My Account(but it is Sign Out Button)
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:01:50 PM</td>
+				<td class='step-details'>
+						click on Store Manager
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:01:50 PM</td>
+				<td class='step-details'>
+						hover over Coupons
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:01:52 PM</td>
+				<td class='step-details'>
+						click on Add New
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:01:53 PM</td>
+				<td class='step-details'>
+						enter the code
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:01:53 PM</td>
+				<td class='step-details'>
+						enter the description
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:01:53 PM</td>
+				<td class='step-details'>
+						select fixed product discount
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:01:53 PM</td>
+				<td class='step-details'>
+						enter the coupon amount
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:01:53 PM</td>
+				<td class='step-details'>
+						enter the coupon expiration date
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:01:53 PM</td>
+				<td class='step-details'>
+						validate the "allow free shipping" and "show on store" checkboxs are clickable
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:01:53 PM</td>
+				<td class='step-details'>
+						click on submit button
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:01:59 PM</td>
+				<td class='step-details'>
+						validate "Edit Coupon" is visible
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:02:02 PM</td>
+				<td class='step-details'>
+						click on Coupons button again
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:02:04 PM</td>
+				<td class='step-details'>
+						validate coupon/s is/are visible
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:02:04 PM</td>
+				<td class='step-details'>
+						TC_18_User_should_be_able_to_create_Coupons_as_a_Vendor
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:02:04 PM</td>
+				<td class='step-details'>
+						Test passed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+						<ul class='screenshots'>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611060204image.png' src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611060204image.png' data-src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611060204image.png'></li>
+						</ul>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='32'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_19_User_should_be_able_to_shop_as_a_Customer_with_the_created_Coupon</span>
+						<span class='test-time'>Jun 11, 2023 06:02:06 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 06:02:06 PM</span>
+	<span class='label end-time'>Jun 11, 2023 06:03:11 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 4s+968ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:02:06 PM</td>
+				<td class='step-details'>
+						TC_19_User_should_be_able_to_shop_as_a_Customer_with_the_created_Coupon
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:02:40 PM</td>
+				<td class='step-details'>
+						click on sign in button
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:02:45 PM</td>
+				<td class='step-details'>
+						click on My Account(but it is Sign Out Button)
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:02:54 PM</td>
+				<td class='step-details'>
+						click on Orders
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:03:00 PM</td>
+				<td class='step-details'>
+						click on a product
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:03:03 PM</td>
+				<td class='step-details'>
+						click on ADD TO CART button
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:03:05 PM</td>
+				<td class='step-details'>
+						click on Cart button
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:03:05 PM</td>
+				<td class='step-details'>
+						click on VIEW CART button
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:03:09 PM</td>
+				<td class='step-details'>
+						enter the coupon code
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:03:10 PM</td>
+				<td class='step-details'>
+						click on APPLY COUPON button
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:03:11 PM</td>
+				<td class='step-details'>
+						TC_19_User_should_be_able_to_shop_as_a_Customer_with_the_created_Coupon
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:03:11 PM</td>
+				<td class='step-details'>
+						TC_19_User_should_be_able_to_shop_as_a_Customer_with_the_created_Coupon
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:03:11 PM</td>
+				<td class='step-details'>
+						<textarea disabled class="code-block">java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertFalse(Assert.java:78)
+	at org.testng.Assert.assertFalse(Assert.java:88)
+	at project.pages.customerpages.PMC_CartPage.validateCouponIsAccepted(PMC_CartPage.java:98)
+	at project.tests.US_019_TC_19_User_should_be_able_to_shop_as_a_Customer_with_the_created_Coupon.TC_19_User_should_be_able_to_shop_as_a_Customer_with_the_created_Coupon(US_019_TC_19_User_should_be_able_to_shop_as_a_Customer_with_the_created_Coupon.java:70)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</textarea>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+						<ul class='screenshots'>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611060311image.png' src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611060311image.png' data-src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611060311image.png'></li>
+						</ul>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='33'>
+					<div class='test-heading'>
+						<span class='test-name'>TC_20_User_should_be_able_to_shop_as_a_Vendor_with_the_created_Coupon</span>
+						<span class='test-time'>Jun 11, 2023 06:03:13 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2023 06:03:13 PM</span>
+	<span class='label end-time'>Jun 11, 2023 06:04:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 8s+548ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:03:13 PM</td>
+				<td class='step-details'>
+						TC_20_User_should_be_able_to_shop_as_a_Vendor_with_the_created_Coupon
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:03:49 PM</td>
+				<td class='step-details'>
+						you should click on Sign In button as a vendor
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:03:57 PM</td>
+				<td class='step-details'>
+						click on My Account(but it is Sign Out Button)
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:04:03 PM</td>
+				<td class='step-details'>
+						click on Orders
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:04:09 PM</td>
+				<td class='step-details'>
+						click on a product
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:04:11 PM</td>
+				<td class='step-details'>
+						click on ADD TO CART button
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:04:14 PM</td>
+				<td class='step-details'>
+						click on Cart button
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:04:14 PM</td>
+				<td class='step-details'>
+						click on VIEW CART button
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:04:18 PM</td>
+				<td class='step-details'>
+						enter the coupon code
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:04:18 PM</td>
+				<td class='step-details'>
+						click on APPLY COUPON button
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:04:20 PM</td>
+				<td class='step-details'>
+						TC_20_User_should_be_able_to_shop_as_a_Vendor_with_the_created_Coupon
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:04:20 PM</td>
+				<td class='step-details'>
+						TC_20_User_should_be_able_to_shop_as_a_Vendor_with_the_created_Coupon
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:04:20 PM</td>
+				<td class='step-details'>
+						<textarea disabled class="code-block">java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertFalse(Assert.java:78)
+	at org.testng.Assert.assertFalse(Assert.java:88)
+	at project.pages.customerpages.PMC_CartPage.validateCouponIsAccepted(PMC_CartPage.java:98)
+	at project.tests.US_020_TC_20_User_should_be_able_to_shop_as_a_Vendor_with_the_created_Coupon.TC_20_User_should_be_able_to_shop_as_a_Vendor_with_the_created_Coupon(US_020_TC_20_User_should_be_able_to_shop_as_a_Vendor_with_the_created_Coupon.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</textarea>
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>6:04:22 PM</td>
+				<td class='step-details'>
+						Regression Test
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+						<ul class='screenshots'>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611060420image.png' src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611060420image.png' data-src='C:\Users\bilal\IdeaProjects\TestNGProjectSucces\test-output\Reports\Screenshots\20230611060420image.png'></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<div id='step-filters' class="right sr-filters">
+				<a class="btn-floating waves-effect waves-light green" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></a>
+				<a class="btn-floating waves-effect waves-light red" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light red darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light pink text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></a>
+				<a class="btn-floating waves-effect waves-light orange" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></a>
+				<a class="btn-floating waves-effect waves-light teal" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></a>
+				<a class="btn-floating waves-effect waves-light grey" status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></a>
+			</div>
+			<h5 class='test-name'></h5>
+		</div>
+	</div>
+	<!-- subview right -->
+</div>
+<!-- test view --><!-- category view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>java.lang.AssertionError</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 11, 2023 06:02:06 PM</td>
+										<td class='linked' test-id='32'>TC_19_User_should_be_able_to_shop_as_a_Customer_with_the_created_Coupon</td>
+										<td>
+											<textarea disabled class="code-block">java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertFalse(Assert.java:78)
+	at org.testng.Assert.assertFalse(Assert.java:88)
+	at project.pages.customerpages.PMC_CartPage.validateCouponIsAccepted(PMC_CartPage.java:98)
+	at project.tests.US_019_TC_19_User_should_be_able_to_shop_as_a_Customer_with_the_created_Coupon.TC_19_User_should_be_able_to_shop_as_a_Customer_with_the_created_Coupon(US_019_TC_19_User_should_be_able_to_shop_as_a_Customer_with_the_created_Coupon.java:70)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Jun 11, 2023 06:03:13 PM</td>
+										<td class='linked' test-id='33'>TC_20_User_should_be_able_to_shop_as_a_Vendor_with_the_created_Coupon</td>
+										<td>
+											<textarea disabled class="code-block">java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertFalse(Assert.java:78)
+	at org.testng.Assert.assertFalse(Assert.java:88)
+	at project.pages.customerpages.PMC_CartPage.validateCouponIsAccepted(PMC_CartPage.java:98)
+	at project.tests.US_020_TC_20_User_should_be_able_to_shop_as_a_Vendor_with_the_created_Coupon.TC_20_User_should_be_able_to_shop_as_a_Vendor_with_the_created_Coupon(US_020_TC_20_User_should_be_able_to_shop_as_a_Vendor_with_the_created_Coupon.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>33</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>0</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Jun 11, 2023 05:49:34 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Jun 11, 2023 06:04:22 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 14m 47s+666ms</div>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel dashboard-environment'>
+					<span class='right label cyan white-text'>Environment</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Value</th>
+						</tr>
+							<tr>
+								<td>Application Name</td>
+								<td>Pearly Market</td>
+							</tr>
+							<tr>
+								<td>Browser</td>
+								<td>Chrome</td>
+							</tr>
+							<tr>
+								<td>Team Name</td>
+								<td>Team-04</td>
+							</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->		</div>
+		<!-- container -->
+		<script>
+			var statusGroup = {
+                parentCount: 33,
+				passParent: 31,
+				failParent: 2,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 2,
+				childCount: 0,
+				passChild: 0,
+				failChild: 0,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				debugChild: 0,
+				exceptionsChild: 0,
+				grandChildCount: 0,
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				debugGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		<script>
+			var timeline = {
+			        "Pearly Market Web Application":0.001,"Regression Test":0,"TC_01_Customer_should_sign_up_as_a_user_on_the_website":11.112,"TC_02_Registration_should_NOT_be_available_using_previously_registered_credentials":10.389,"TC_03_User_should_add_Billing_Address":31.956,"TC_04_User_should_add_Shipping_Address":30.692,"TC_05_User_should_be_able_to_edit_Account_Details":33.554,"signIn_as_customer":13.933,"TC_06_User_should_be_able_to_shop_on_the_site1":9.948,"TC_06_User_should_be_able_to_shop_on_the_site1":6.664,"TC_06_User_should_be_able_to_shop_on_the_site1":6.617,"TC_06_User_should_be_able_to_shop_on_the_site1":6.522,"TC_06_User_should_be_able_to_shop_on_the_site2":7.754,"TC_06_User_should_be_able_to_shop_on_the_site3":8.505,"signIn_as_customer":14.265,"TC_07_User_should_be_able_to_compare_selected_items_Compare":6.783,"TC_07_User_should_be_able_to_compare_selected_items_Compare":4.041,"TC_07_User_should_be_able_to_compare_selected_items_Compare":4.118,"TC_07_User_should_be_able_to_compare_selected_items_Compare":5.2,"TC_07_User_should_be_able_to_compare_selected_items_Compare2":44.757,"TC_08_User_should_be_able_to_add_selected_items_to_Wishlist":37.927,"TC_09_User_should_be_able_to_register_to_the_website_as_Vendor":66.534,"TC_10_Password_level_chart_should_be_visible":19.045,"TC_11_User_should_be_able_to_sign_in_as_a_vendor":19.313,"TC_12_Vendor_should_add_Billing_Address":31.356,"TC_13_Vendor_should_add_Shipping_Address":30.241,"TC_14_User_should_be_able_to_see_the_options_to_add_items_as_a_Vendor":67.078,"TC_15_User_should_be_able_to_see_the_options_to_add_items_as_a_Vendor":34.075,"TC_16_User_should_be_able_to_add_Simple_Product_as_a_Vendor":54.97,"TC_17_User_should_be_able_to_shop_as_a_Vendor":60.417,"TC_18_User_should_be_able_to_create_Coupons_as_a_Vendor":38.634,"TC_19_User_should_be_able_to_shop_as_a_Customer_with_the_created_Coupon":64.968,"TC_20_User_should_be_able_to_shop_as_a_Vendor_with_the_created_Coupon":68.548
+			};
+		</script>
+		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>
+		<script type='text/javascript'>
+		</script>
+	</body>
+</html>
